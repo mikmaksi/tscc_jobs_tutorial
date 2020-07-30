@@ -7,7 +7,7 @@
 #PBS -e job.e 
 #PBS -V
 #PBS -t 1-12
-#PBS -A gymreklab-group
+#PBS -A <group_name>
 
 # about: launch an array job on TSCC
 # -q: the queue name (see TSCC instructions)
@@ -18,7 +18,7 @@
 # -A: need to specify group id for charging copute resources
 
 # cd into main analysis directory; this is necessary b/c job will not start in your project space
-cd /projects/ps-gymreklab/mikhail/tscc_jobs_tutorial
+cd /projects/<project_space>/<folder_name>
 
 # config
 proc_list='_to_proc' # a list that has some parameters for your job
